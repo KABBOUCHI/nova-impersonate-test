@@ -1,0 +1,77 @@
+{
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": "^7.1.3",
+        "digitalcloud/multilingual-nova": "^1.0",
+        "fideloper/proxy": "^4.0",
+        "itsgoingd/clockwork": "^3.0",
+        "kabbouchi/nova-impersonate": "dev-master",
+        "kabbouchi/nova-logs-tool": "*",
+        "kabbouchi/nova-translatable": "*",
+        "laravel/framework": "5.6.*",
+        "laravel/nova": "~1.0",
+        "laravel/tinker": "^1.0",
+        "mrmonat/nova-translatable": "^1.1",
+        "spatie/laravel-backup": "^5.10",
+        "spatie/nova-backup-tool": "^0.0.1",
+        "spatie/nova-tail-tool": "^0.0.1"
+    },
+    "require-dev": {
+        "filp/whoops": "^2.0",
+        "fzaninotto/faker": "^1.4",
+        "mockery/mockery": "^1.0",
+        "nunomaduro/collision": "^2.0",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ]
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
