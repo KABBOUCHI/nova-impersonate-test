@@ -672,12 +672,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KABBOUCHI/nova-impersonate.git",
-                "reference": "ec08932f7f30712592710540672f0821ddaf3e6c"
+                "reference": "9253c8163a92b3256a2baa95d290aa671388cb0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KABBOUCHI/nova-impersonate/zipball/ec08932f7f30712592710540672f0821ddaf3e6c",
-                "reference": "ec08932f7f30712592710540672f0821ddaf3e6c",
+                "url": "https://api.github.com/repos/KABBOUCHI/nova-impersonate/zipball/9253c8163a92b3256a2baa95d290aa671388cb0a",
+                "reference": "9253c8163a92b3256a2baa95d290aa671388cb0a",
                 "shasum": ""
             },
             "require": {
@@ -706,7 +706,7 @@
                 "laravel",
                 "nova"
             ],
-            "time": "2018-11-09T08:12:55+00:00"
+            "time": "2018-11-16T17:44:07+00:00"
         },
         {
             "name": "kabbouchi/nova-logs-tool",

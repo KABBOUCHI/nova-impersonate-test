@@ -81,7 +81,7 @@ class User extends Resource
 				->updateRules('nullable', 'string', 'min:6'),
 
 			Impersonate::make($this)->withMeta([
-				'redirect_to' => route('home'),
+				// 'redirect_to' => route('home'),
 				'hideText'   => false
 			])
 
